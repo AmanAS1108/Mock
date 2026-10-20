@@ -10,7 +10,7 @@ export class AuthService {
    * Normalizes an email address consistently.
    */
   normalizeEmail(email: string): string {
-    return email.trim().toLowerCase();
+    return email.trim();
   }
 
   /**
