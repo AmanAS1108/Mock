@@ -41,7 +41,7 @@ export class AuthService {
    * Verifies a plain password against a bcrypt hash.
    */
   verifyPassword(password: string, hash: string): boolean {
-    return bcrypt.compareSync(hash, password);
+    return bcrypt.compareSync(password, hash);
   }
 
   /**
